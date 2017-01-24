@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5F0B3481E37A4E400AD0BBF /* glove.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A5F0B3471E37A4E400AD0BBF /* glove.hpp */; };
+		A5F0B34A1E37A4E400AD0BBF /* glovePriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A5F0B3491E37A4E400AD0BBF /* glovePriv.hpp */; };
+		A5F0B34C1E37A4E400AD0BBF /* glove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F0B34B1E37A4E400AD0BBF /* glove.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5F0B3441E37A4E400AD0BBF /* libglove.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libglove.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F0B3471E37A4E400AD0BBF /* glove.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = glove.hpp; sourceTree = "<group>"; };
+		A5F0B3491E37A4E400AD0BBF /* glovePriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = glovePriv.hpp; sourceTree = "<group>"; };
+		A5F0B34B1E37A4E400AD0BBF /* glove.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = glove.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5F0B3411E37A4E400AD0BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5F0B33B1E37A4E400AD0BBF = {
+			isa = PBXGroup;
+			children = (
+				A5F0B3461E37A4E400AD0BBF /* glove */,
+				A5F0B3451E37A4E400AD0BBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5F0B3451E37A4E400AD0BBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5F0B3441E37A4E400AD0BBF /* libglove.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5F0B3461E37A4E400AD0BBF /* glove */ = {
+			isa = PBXGroup;
+			children = (
+				A5F0B3471E37A4E400AD0BBF /* glove.hpp */,
+				A5F0B3491E37A4E400AD0BBF /* glovePriv.hpp */,
+				A5F0B34B1E37A4E400AD0BBF /* glove.cpp */,
+			);
+			path = glove;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A5F0B3421E37A4E400AD0BBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F0B3481E37A4E400AD0BBF /* glove.hpp in Headers */,
+				A5F0B34A1E37A4E400AD0BBF /* glovePriv.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A5F0B3431E37A4E400AD0BBF /* glove */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F0B34F1E37A4E400AD0BBF /* Build configuration list for PBXNativeTarget "glove" */;
+			buildPhases = (
+				A5F0B3401E37A4E400AD0BBF /* Sources */,
+				A5F0B3411E37A4E400AD0BBF /* Frameworks */,
+				A5F0B3421E37A4E400AD0BBF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glove;
+			productName = glove;
+			productReference = A5F0B3441E37A4E400AD0BBF /* libglove.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5F0B33C1E37A4E400AD0BBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					A5F0B3431E37A4E400AD0BBF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A5F0B33F1E37A4E400AD0BBF /* Build configuration list for PBXProject "glove" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5F0B33B1E37A4E400AD0BBF;
+			productRefGroup = A5F0B3451E37A4E400AD0BBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5F0B3431E37A4E400AD0BBF /* glove */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5F0B3401E37A4E400AD0BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F0B34C1E37A4E400AD0BBF /* glove.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A5F0B34D1E37A4E400AD0BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A5F0B34E1E37A4E400AD0BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A5F0B3501E37A4E400AD0BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5F0B3511E37A4E400AD0BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5F0B33F1E37A4E400AD0BBF /* Build configuration list for PBXProject "glove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F0B34D1E37A4E400AD0BBF /* Debug */,
+				A5F0B34E1E37A4E400AD0BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F0B34F1E37A4E400AD0BBF /* Build configuration list for PBXNativeTarget "glove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F0B3501E37A4E400AD0BBF /* Debug */,
+				A5F0B3511E37A4E400AD0BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5F0B33C1E37A4E400AD0BBF /* Project object */;
+}
