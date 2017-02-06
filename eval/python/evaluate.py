@@ -1,10 +1,11 @@
 import argparse
 import numpy as np
+import pdb
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--vocab_file', default='vocab.txt', type=str)
-    parser.add_argument('--vectors_file', default='vectors.txt', type=str)
+    parser.add_argument('--vocab_file', default='/Users/sammy/Documents/phd-2016/ai-lab/data/vocab_file', type=str)
+    parser.add_argument('--vectors_file', default='/Users/sammy/Documents/phd-2016/ai-lab/DPrototype/glove/vectors.txt', type=str)
     args = parser.parse_args()
 
     with open(args.vocab_file, 'r') as f:
@@ -30,10 +31,52 @@ def main():
     W_norm = np.zeros(W.shape)
     d = (np.sum(W ** 2, 1) ** (0.5))
     W_norm = (W.T / d).T
-    evaluate_vectors(W_norm, vocab, ivocab)
+    test_vectors(W_norm, vocab, ivocab)
+
+def test_vectors(W, vocab, ivocab):
+    """Evaluate the trained word vectors on a variety of tasks"""
+
+    # filenames = [
+    #     'capital-common-countries.txt', 'capital-world.txt', 'currency.txt',
+    #     'city-in-state.txt', 'family.txt', 'gram1-adjective-to-adverb.txt',
+    #     'gram2-opposite.txt', 'gram3-comparative.txt', 'gram4-superlative.txt',
+    #     'gram5-present-participle.txt', 'gram6-nationality-adjective.txt',
+    #     'gram7-past-tense.txt', 'gram8-plural.txt', 'gram9-plural-verbs.txt',
+    #     ]
+    # prefix = './eval/question-data/'
+    filenames = ['testSet']
+    prefix = '/Users/sammy/Documents/phd-2016/ai-lab/data/'
+
+    # to avoid memory overflow, could be increased/decreased
+    # depending on system and vocab size
+    split_size = 100
+
+    correct_sem = 0; # count correct semantic questions
+    correct_syn = 0; # count correct syntactic questions
+    correct_tot = 0 # count correct questions
+    count_sem = 0; # count all semantic questions
+    count_syn = 0; # count all syntactic questions
+    count_tot = 0 # count all questions
+    full_count = 0 # count all questions, including those with unknown words
+
+    for i in range(len(filenames)):
+        with open('%s/%s' % (prefix, filenames[i]), 'r') as f:
+            full_data = [line.rstrip().split(' ') for line in f]
+            full_count += len(full_data)
+            for x in full_data:
+                for word in x:
+                    if word not in vocab:
+                        print(word)
+            pdb.set_trace()
+            data = [x for x in full_data if all(word in vocab for word in x)]
+
+
+        indices = np.array([[vocab[word] for word in row] for row in data])
+        pdb.set_trace()
+        return indices
 
 def evaluate_vectors(W, vocab, ivocab):
-    """Evaluate the trained word vectors on a variety of tasks"""
+        """Evaluate the trained word vectors on a variety of tasks"""
 
     filenames = [
         'capital-common-countries.txt', 'capital-world.txt', 'currency.txt',
